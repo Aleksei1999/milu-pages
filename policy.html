@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — MILU</title>
+<meta name="description" content="Как MILU собирает, хранит и защищает персональные данные родителей и детей. Соответствие 152-ФЗ, GDPR, COPPA и требованиям Apple App Store.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FFF8EE">
+<style>
+:root{
+  --cream:#FFF8EE;
+  --paper:#FFFCF6;
+  --ink:#2A2440;
+  --ink-soft:#5C5470;
+  --mute:#9C95B0;
+  --line:#E8E1D0;
+  --hairline:#EFEAE0;
+  --lavender:#C9BFFF;
+  --lavender-deep:#8A7FE0;
+  --lavender-wash:#F5F0FF;
+  --butter-wash:#FFF7DF;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background-color:var(--cream);
+  background-image:
+    radial-gradient(46rem 30rem at 50% 8%, rgba(201,191,255,0.30), rgba(201,191,255,0) 70%),
+    radial-gradient(38rem 26rem at 50% 8%, rgba(255,201,168,0.12), rgba(255,201,168,0) 70%);
+  background-repeat:no-repeat;
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  font-size:17px;
+  line-height:1.7;
+}
+.wrap{max-width:720px;margin:0 auto;padding:28px 20px 40px}
+/* Top bar */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.back{
+  display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;
+  border:1px solid var(--hairline);border-radius:999px;background:var(--paper);
+  color:var(--ink);font-size:14px;font-weight:800;text-decoration:none;
+  box-shadow:0 2px 6px rgba(42,36,64,0.04);
+}
+.back:hover{border-color:var(--lavender);background:var(--lavender-wash)}
+.wordmark{font-size:22px;font-weight:900;letter-spacing:0.06em;color:var(--lavender-deep);text-decoration:none}
+/* Card */
+.card{
+  margin-top:32px;background:var(--paper);border:1px solid var(--hairline);
+  border-radius:24px;padding:26px 22px;box-shadow:0 4px 14px rgba(42,36,64,0.06);
+}
+.kicker{margin:0;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.22em;color:var(--lavender-deep)}
+h1{margin:12px 0 0;font-size:28px;font-weight:900;letter-spacing:-0.02em;line-height:1.1}
+.updated{margin:12px 0 0;font-size:14px;font-weight:700;color:var(--ink-soft)}
+.intro{margin:24px 0 0;font-size:18px;font-weight:500}
+.intro p{margin:0}
+/* TOC */
+.toc{margin-top:32px;border:1px solid var(--hairline);background:var(--lavender-wash);border-radius:18px;padding:16px 20px}
+.toc p{margin:0;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.22em;color:var(--lavender-deep)}
+.toc ol{margin:12px 0 0;padding:0;list-style:none;counter-reset:toc}
+.toc li{counter-increment:toc;display:flex;gap:10px;font-size:14px;font-weight:700;line-height:1.6;margin-top:6px}
+.toc li::before{content:counter(toc,decimal-leading-zero);color:var(--mute);font-weight:800;flex:none}
+.toc a{color:var(--ink);text-decoration:none;text-underline-offset:4px}
+.toc a:hover{color:var(--lavender-deep);text-decoration:underline}
+/* Body */
+.body{margin-top:40px}
+.body section{margin-top:40px;scroll-margin-top:24px}
+.body section:first-child{margin-top:0}
+.sec-head{display:flex;align-items:baseline;gap:12px}
+.sec-num{font-size:26px;font-weight:900;line-height:1;color:var(--lavender-deep);flex:none}
+h2{margin:0;font-size:21px;font-weight:800;letter-spacing:-0.015em;line-height:1.25}
+h3{margin:26px 0 0;font-size:16px;font-weight:800}
+.body p{margin:16px 0 0}
+.body ul{margin:16px 0 0;padding-left:22px}
+.body ul li{margin-top:8px}
+.body ul li:first-child{margin-top:0}
+a{color:var(--lavender-deep);font-weight:700;text-underline-offset:4px;text-decoration:none}
+a:hover{text-decoration:underline}
+.body p a,.body li a{text-decoration:underline}
+strong{font-weight:800}
+.plain{font-weight:700;color:var(--ink)}
+:focus-visible{outline:3px solid var(--lavender-deep);outline-offset:2px;border-radius:6px}
+/* Table */
+.table-scroll{overflow-x:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}
+thead tr{border-bottom:1px solid var(--line)}
+th{padding:8px 12px 8px 0;font-weight:800;color:var(--ink)}
+td{padding:8px 12px 8px 0;color:var(--ink-soft)}
+tbody tr{border-bottom:1px solid var(--hairline)}
+tbody tr:last-child{border-bottom:0}
+td.k{font-weight:700;color:var(--ink)}
+/* Callout */
+.note{
+  margin:16px 0 0;border:1px solid var(--hairline);background:var(--butter-wash);
+  border-radius:18px;padding:14px 16px;font-size:14px;font-weight:700;color:var(--ink);line-height:1.6;
+}
+/* Contact box */
+.contact{
+  margin-top:48px;display:flex;flex-direction:column;gap:12px;
+  border:1px solid var(--hairline);background:var(--cream);border-radius:18px;padding:20px;
+}
+.contact p{margin:0;font-size:14px;font-weight:700;color:var(--ink-soft)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 20px;
+  border-radius:999px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:800;
+  text-decoration:none;box-shadow:0 8px 20px rgba(42,36,64,0.18);
+}
+.btn:hover{background:#1A1438;text-decoration:none}
+/* Footer */
+footer{margin-top:36px;text-align:center;font-size:13px;color:var(--mute);line-height:1.9}
+footer a{color:var(--ink-soft);font-weight:700}
+footer a:hover{color:var(--lavender-deep)}
+footer .site{display:block;margin-top:6px;color:var(--mute);font-weight:600}
+@media (min-width:640px){
+  .wrap{padding:40px 24px 56px}
+  .card{padding:40px}
+  h1{font-size:34px}
+  h2{font-size:24px}
+  .contact{flex-direction:row;align-items:center;justify-content:space-between}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <a class="back" href="support" aria-label="Вернуться на страницу поддержки"><span aria-hidden="true">←</span><span>Поддержка</span></a>
+    <span class="wordmark">MILU</span>
+  </header>
+
+  <article class="card">
+    <p class="kicker">Конфиденциальность</p>
+    <h1>Политика обработки персональных данных</h1>
+    <p class="updated">Последнее обновление: 18 июня 2026 г.</p>
+
+    <div class="intro">
+      <p>Сервис MILU (далее — «MILU», «мы») создаёт интерактивные сказки и программы помощи семьям с детьми от 1 до 10 лет. Безопасность и конфиденциальность данных родителей и детей — наш приоритет. Настоящая Политика описывает, какие данные мы получаем, как используем и как вы можете контролировать их обработку.</p>
+    </div>
+
+    <nav class="toc" aria-label="Содержание">
+      <p>Содержание</p>
+      <ol>
+        <li><a href="#general">Общие положения и оператор</a></li>
+        <li><a href="#data-collected">Какие данные мы собираем</a></li>
+        <li><a href="#purposes">Цели обработки</a></li>
+        <li><a href="#legal-basis">Правовые основания обработки</a></li>
+        <li><a href="#children">Данные детей: COPPA и GDPR-K</a></li>
+        <li><a href="#sharing">Кому мы передаём данные</a></li>
+        <li><a href="#storage">Где и сколько мы храним данные</a></li>
+        <li><a href="#rights">Ваши права как субъекта данных</a></li>
+        <li><a href="#cookies">Файлы cookie и идентификаторы</a></li>
+        <li><a href="#security">Меры безопасности</a></li>
+        <li><a href="#changes">Изменения политики</a></li>
+        <li><a href="#contacts">Контакты оператора</a></li>
+      </ol>
+    </nav>
+
+    <div class="body">
+
+      <section id="general">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">01</span><h2>Общие положения и оператор</h2></div>
+        <p>Настоящая Политика разработана в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ «О персональных данных», Общим регламентом по защите данных Европейского союза 2016/679 (GDPR), Законом США о защите конфиденциальности детей в интернете (Children&apos;s Online Privacy Protection Act, COPPA, 15 U.S.C. §§ 6501–6506) и применимыми требованиями Apple App Store Review Guidelines (§ 5.1).</p>
+        <p>Политика применяется к веб-сайту <span class="plain">www.millu.tech</span> и мобильному приложению MILU для iOS и Android.</p>
+        <p>Пользуясь сервисом MILU, вы подтверждаете согласие с условиями настоящей Политики. Если вы не согласны с какими-либо её положениями, пожалуйста, прекратите использование сервиса.</p>
+      </section>
+
+      <section id="data-collected">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">02</span><h2>Какие данные мы собираем</h2></div>
+        <p>Мы собираем только тот минимум данных, который нужен для работы сервиса. Состав данных зависит от того, как именно вы пользуетесь MILU.</p>
+
+        <h3>2.1. Данные родителя (владельца аккаунта)</h3>
+        <ul>
+          <li><strong>Электронная почта</strong> — для регистрации, входа и восстановления доступа (Supabase Auth).</li>
+          <li><strong>Идентификатор пользователя</strong> (UUID) — внутренний идентификатор аккаунта.</li>
+          <li><strong>Платёжная информация</strong> — статус подписки, тариф, дата окончания, признак авто-продления. Реквизиты банковской карты MILU не получает и не хранит: их обрабатывает платёжный провайдер (ЮКасса либо Apple In-App Purchase).</li>
+          <li><strong>Технические данные</strong> — IP-адрес, тип устройства и ОС, язык интерфейса, временная зона. Используются только для обнаружения мошенничества и обеспечения безопасности входа.</li>
+        </ul>
+
+        <h3>2.2. Данные ребёнка (профиля внутри аккаунта родителя)</h3>
+        <ul>
+          <li><strong>Имя ребёнка</strong> (произвольная строка, может быть псевдонимом).</li>
+          <li><strong>Возраст или год рождения</strong> — для подбора сказок подходящего уровня.</li>
+          <li><strong>Пол</strong> (опционально) — для адаптации местоимений в тексте сказок.</li>
+          <li><strong>Прогресс прохождения</strong> — какие сказки и программы пройдены, выбранные ребёнком развилки.</li>
+          <li><strong>Ответы родителя на опросах</strong> после каждой сказки — обобщённая обратная связь о состоянии ребёнка (например, «помогло заснуть», «вызвало интерес»).</li>
+        </ul>
+        <p>MILU <strong>не собирает</strong> у детей напрямую: контактные данные, геолокацию, голос, фотографии, поведенческие профили для рекламы.</p>
+
+        <h3>2.3. Аналитика поведения в приложении</h3>
+        <p>Мы фиксируем агрегированные события (открытие экрана, нажатие кнопки, завершение сказки) для оценки качества сервиса. Эти данные обезличены: они привязаны к идентификатору устройства, а не к имени или email. Мы не используем рекламные SDK и сторонних трекеров.</p>
+      </section>
+
+      <section id="purposes">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">03</span><h2>Цели обработки</h2></div>
+        <ul>
+          <li>предоставление доступа к сказкам и программам по подписке;</li>
+          <li>персонализация контента под возраст и интересы ребёнка;</li>
+          <li>обработка платежей и управление подпиской;</li>
+          <li>обратная связь с пользователем по техническим и юридическим вопросам;</li>
+          <li>обеспечение безопасности аккаунта и предотвращение мошенничества;</li>
+          <li>улучшение качества сервиса на основе агрегированной обезличенной статистики;</li>
+          <li>исполнение требований законодательства РФ, ЕС и США.</li>
+        </ul>
+        <p>Мы <strong>не используем</strong> данные детей для таргетированной рекламы, профилирования или продажи третьим лицам.</p>
+      </section>
+
+      <section id="legal-basis">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">04</span><h2>Правовые основания обработки</h2></div>
+        <p>Для пользователей, на которых распространяется GDPR (ЕС, ЕЭЗ):</p>
+        <ul>
+          <li><strong>Договор (ст. 6(1)(b) GDPR)</strong> — оформление и обслуживание подписки.</li>
+          <li><strong>Согласие (ст. 6(1)(a) GDPR)</strong> — создание профиля ребёнка и аналитика поведения.</li>
+          <li><strong>Законный интерес (ст. 6(1)(f) GDPR)</strong> — обеспечение безопасности сервиса и предотвращение мошенничества.</li>
+          <li><strong>Правовое обязательство (ст. 6(1)(c) GDPR)</strong> — налоговая и бухгалтерская отчётность.</li>
+        </ul>
+        <p>Для пользователей из РФ обработка ведётся на основании согласия субъекта персональных данных (ст. 6 ч. 1 п. 1 152-ФЗ) и в целях исполнения договора, стороной которого является субъект (п. 5).</p>
+      </section>
+
+      <section id="children">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">05</span><h2>Данные детей: COPPA и GDPR-K</h2></div>
+        <p>MILU предназначен для семейного использования. Аккаунт всегда оформляет совершеннолетний родитель или законный представитель ребёнка. Дети не имеют собственного логина, не вводят персональные данные и не могут самостоятельно оформить подписку.</p>
+        <p>В соответствии с COPPA (США) и положениями GDPR о защите данных детей (ст. 8 GDPR, «GDPR-K»):</p>
+        <ul>
+          <li>родитель действует от имени ребёнка и даёт согласие на обработку;</li>
+          <li>данные профиля ребёнка минимальны (имя, возраст, пол) и хранятся только для подбора подходящего контента;</li>
+          <li>мы не отображаем ребёнку рекламу, не предлагаем встроенных покупок и не запрашиваем у него платёжные данные;</li>
+          <li>родитель в любой момент может удалить профиль ребёнка или весь аккаунт целиком через раздел «Личный кабинет» либо письмом на <a href="mailto:hello@millu.tech">hello@millu.tech</a>.</li>
+        </ul>
+        <p>Если вы считаете, что ребёнок младше 13 лет передал нам данные без вашего ведома, немедленно сообщите об этом — мы удалим их в течение 14 дней.</p>
+      </section>
+
+      <section id="sharing">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">06</span><h2>Кому мы передаём данные</h2></div>
+        <p>Мы не продаём и не передаём данные третьим лицам в маркетинговых целях. Минимальный объём данных передаётся только тем подрядчикам, без которых сервис не может работать:</p>
+        <ul>
+          <li><strong>Supabase Inc.</strong> (США/ЕС) — провайдер аутентификации и базы данных. Серверы расположены в Европейском союзе. Передача из ЕС регулируется стандартными договорными положениями (SCC).</li>
+          <li><strong>ООО НКО «ЮМани»</strong> (ЮКасса, РФ) — приём оплаты банковскими картами для пользователей из РФ. Данные карты вводятся непосредственно на стороне ЮКассы; MILU получает только статус операции и токен подписки.</li>
+          <li><strong>Apple Inc.</strong> (США) — обработка платежей через In-App Purchase для пользователей, оплативших подписку в приложении на iOS.</li>
+          <li><strong>Vercel Inc.</strong> (США) — хостинг веб-сайта; обрабатывает технические запросы (IP-адрес, заголовки) для доставки контента.</li>
+          <li><strong>Государственные органы</strong> — только по мотивированному официальному запросу и в объёме, предусмотренном законом.</li>
+        </ul>
+        <p>Полный список подпроцессоров и условий обработки доступен по запросу на <a href="mailto:hello@millu.tech">hello@millu.tech</a>.</p>
+      </section>
+
+      <section id="storage">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">07</span><h2>Где и сколько мы храним данные</h2></div>
+        <p>Персональные данные пользователей из РФ обрабатываются и хранятся первично на серверах, расположенных на территории Российской Федерации, как того требует ч. 5 ст. 18 152-ФЗ. Резервные копии обезличенных технических логов могут храниться у Supabase в ЕС.</p>
+        <p>Сроки хранения:</p>
+        <ul>
+          <li><strong>Аккаунт и профили детей</strong> — пока активна подписка или аккаунт; после удаления аккаунта родителем — ещё 90 дней для возможности восстановления, далее безвозвратное удаление.</li>
+          <li><strong>Платёжные транзакции</strong> — 5 лет, как требует Федеральный закон от 06.12.2011 № 402-ФЗ «О бухгалтерском учёте».</li>
+          <li><strong>Логи безопасности</strong> — 12 месяцев.</li>
+          <li><strong>Обезличенная аналитика</strong> — бессрочно (не содержит идентификаторов субъекта).</li>
+        </ul>
+      </section>
+
+      <section id="rights">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">08</span><h2>Ваши права как субъекта данных</h2></div>
+        <p>В соответствии с 152-ФЗ и GDPR вы имеете право:</p>
+        <ul>
+          <li>получать подтверждение факта обработки и копию данных;</li>
+          <li>требовать уточнения, блокирования или удаления данных;</li>
+          <li>отозвать согласие на обработку в любой момент;</li>
+          <li>получить ваши данные в машиночитаемом формате (право на переносимость, ст. 20 GDPR);</li>
+          <li>подать жалобу в надзорный орган — Роскомнадзор в РФ либо компетентный DPA в стране ЕС/ЕЭЗ.</li>
+        </ul>
+        <p>Чтобы воспользоваться правами, напишите на <a href="mailto:hello@millu.tech">hello@millu.tech</a> с темы «Запрос субъекта данных». Мы отвечаем не позднее 30 дней с момента получения обращения (10 рабочих дней для запросов по 152-ФЗ).</p>
+      </section>
+
+      <section id="cookies">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">09</span><h2>Файлы cookie и идентификаторы</h2></div>
+        <p>Веб-сайт MILU использует только строго необходимые cookie:</p>
+        <ul>
+          <li><strong>session</strong> — для авторизации в Supabase Auth; срок жизни 7 дней.</li>
+          <li><strong>csrf</strong> — для защиты форм от подделки запросов; срок жизни в рамках сессии.</li>
+        </ul>
+        <p>Мы не используем рекламные cookie, межсайтовые трекеры или пиксели социальных сетей. Vercel Analytics на сайте MILU отключён.</p>
+        <p>В мобильном приложении мы используем системный идентификатор установки (Install ID), генерируемый при первом запуске. Этот идентификатор обнуляется при удалении приложения и не привязан к IDFA Apple или Android Advertising ID.</p>
+      </section>
+
+      <section id="security">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">10</span><h2>Меры безопасности</h2></div>
+        <p>MILU применяет организационные и технические меры защиты данных:</p>
+        <ul>
+          <li>TLS 1.2+ для всего трафика между клиентом и сервером;</li>
+          <li>шифрование at-rest на стороне Supabase (AES-256) и шифрование резервных копий;</li>
+          <li>доступ к продакшен-данным имеют только уполномоченные сотрудники по принципу минимальных привилегий;</li>
+          <li>журналирование действий администраторов; регулярный аудит прав доступа;</li>
+          <li>план реагирования на инциденты: в случае утечки уведомление пострадавших пользователей в течение 72 часов (ст. 33 GDPR) и уведомление Роскомнадзора (ст. 21 ч. 3.1 152-ФЗ).</li>
+        </ul>
+      </section>
+
+      <section id="changes">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">11</span><h2>Изменения политики</h2></div>
+        <p>Мы можем обновлять настоящую Политику, чтобы отразить изменения в сервисе или законодательстве. О существенных изменениях мы предупредим минимум за 30 дней — письмом на адрес, указанный при регистрации, и баннером на сайте. Дата последнего обновления указана в начале документа.</p>
+        <p>Если вы продолжаете пользоваться MILU после вступления изменений в силу, это означает согласие с новой редакцией. Если вы не согласны — закройте аккаунт через раздел <span class="plain">Личный кабинет</span> или напишите нам.</p>
+      </section>
+
+      <section id="contacts">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">12</span><h2>Контакты оператора</h2></div>
+        <p><strong>Оператор персональных данных:</strong> Фоменко Алексей Сергеевич (индивидуальный предприниматель), создатель проекта MILU.</p>
+        <p><strong>Адрес для корреспонденции и запросов субъектов данных:</strong> <a href="mailto:hello@millu.tech">hello@millu.tech</a></p>
+        <p><strong>Запросы по GDPR (Data Protection Officer):</strong> <a href="mailto:hello@millu.tech">hello@millu.tech</a></p>
+        <p>Связанные документы: <a href="terms">Условия использования</a>.</p>
+      </section>
+
+    </div>
+
+    <div class="contact">
+      <p>Вопросы по документу или подписке?</p>
+      <a class="btn" href="mailto:hello@millu.tech">hello@millu.tech</a>
+    </div>
+  </article>
+
+  <footer>
+    MILU · <a href="mailto:hello@millu.tech">hello@millu.tech</a><br>
+    <a href="support">Поддержка</a> · <a href="terms">Условия использования</a>
+    <span class="site">Основной сайт: millu.tech</span>
+  </footer>
+
+</div>
+</body>
+</html>

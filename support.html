@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Поддержка — MILU</title>
+<meta name="description" content="Служба поддержки MILU: как связаться с нами, ответы на частые вопросы об аккаунте, подборе сказок, уведомлениях и удалении данных.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FFF8EE">
+<style>
+:root{
+  --cream:#FFF8EE;
+  --paper:#FFFCF6;
+  --ink:#2A2440;
+  --ink-soft:#5C5470;
+  --mute:#9C95B0;
+  --line:#E8E1D0;
+  --hairline:#EFEAE0;
+  --lavender:#C9BFFF;
+  --lavender-deep:#8A7FE0;
+  --lavender-wash:#F5F0FF;
+  --butter-wash:#FFF7DF;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background-color:var(--cream);
+  background-image:
+    radial-gradient(46rem 30rem at 50% 8%, rgba(201,191,255,0.30), rgba(201,191,255,0) 70%),
+    radial-gradient(38rem 26rem at 50% 8%, rgba(255,201,168,0.12), rgba(255,201,168,0) 70%);
+  background-repeat:no-repeat;
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  font-size:17px;
+  line-height:1.7;
+}
+.wrap{max-width:720px;margin:0 auto;padding:28px 20px 40px}
+/* Top bar */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.back{
+  display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;
+  border:1px solid var(--hairline);border-radius:999px;background:var(--paper);
+  color:var(--ink);font-size:14px;font-weight:800;text-decoration:none;
+  box-shadow:0 2px 6px rgba(42,36,64,0.04);
+}
+.back:hover{border-color:var(--lavender);background:var(--lavender-wash)}
+.wordmark{font-size:22px;font-weight:900;letter-spacing:0.06em;color:var(--lavender-deep);text-decoration:none}
+/* Card */
+.card{
+  margin-top:32px;background:var(--paper);border:1px solid var(--hairline);
+  border-radius:24px;padding:26px 22px;box-shadow:0 4px 14px rgba(42,36,64,0.06);
+}
+.kicker{margin:0;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.22em;color:var(--lavender-deep)}
+h1{margin:12px 0 0;font-size:28px;font-weight:900;letter-spacing:-0.02em;line-height:1.1}
+.updated{margin:12px 0 0;font-size:14px;font-weight:700;color:var(--ink-soft)}
+.intro{margin:24px 0 0;font-size:18px;font-weight:500}
+.intro p{margin:0}
+/* TOC */
+.toc{margin-top:32px;border:1px solid var(--hairline);background:var(--lavender-wash);border-radius:18px;padding:16px 20px}
+.toc p{margin:0;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.22em;color:var(--lavender-deep)}
+.toc ol{margin:12px 0 0;padding:0;list-style:none;counter-reset:toc}
+.toc li{counter-increment:toc;display:flex;gap:10px;font-size:14px;font-weight:700;line-height:1.6;margin-top:6px}
+.toc li::before{content:counter(toc,decimal-leading-zero);color:var(--mute);font-weight:800;flex:none}
+.toc a{color:var(--ink);text-decoration:none;text-underline-offset:4px}
+.toc a:hover{color:var(--lavender-deep);text-decoration:underline}
+/* Body */
+.body{margin-top:40px}
+.body section{margin-top:40px;scroll-margin-top:24px}
+.body section:first-child{margin-top:0}
+.sec-head{display:flex;align-items:baseline;gap:12px}
+.sec-num{font-size:26px;font-weight:900;line-height:1;color:var(--lavender-deep);flex:none}
+h2{margin:0;font-size:21px;font-weight:800;letter-spacing:-0.015em;line-height:1.25}
+h3{margin:26px 0 0;font-size:16px;font-weight:800}
+.body p{margin:16px 0 0}
+.body ul{margin:16px 0 0;padding-left:22px}
+.body ul li{margin-top:8px}
+.body ul li:first-child{margin-top:0}
+a{color:var(--lavender-deep);font-weight:700;text-underline-offset:4px;text-decoration:none}
+a:hover{text-decoration:underline}
+.body p a,.body li a{text-decoration:underline}
+strong{font-weight:800}
+.plain{font-weight:700;color:var(--ink)}
+:focus-visible{outline:3px solid var(--lavender-deep);outline-offset:2px;border-radius:6px}
+/* Table */
+.table-scroll{overflow-x:auto;margin-top:16px}
+table{width:100%;border-collapse:collapse;text-align:left;font-size:14px}
+thead tr{border-bottom:1px solid var(--line)}
+th{padding:8px 12px 8px 0;font-weight:800;color:var(--ink)}
+td{padding:8px 12px 8px 0;color:var(--ink-soft)}
+tbody tr{border-bottom:1px solid var(--hairline)}
+tbody tr:last-child{border-bottom:0}
+td.k{font-weight:700;color:var(--ink)}
+/* Callout */
+.note{
+  margin:16px 0 0;border:1px solid var(--hairline);background:var(--butter-wash);
+  border-radius:18px;padding:14px 16px;font-size:14px;font-weight:700;color:var(--ink);line-height:1.6;
+}
+/* Contact box */
+.contact{
+  margin-top:48px;display:flex;flex-direction:column;gap:12px;
+  border:1px solid var(--hairline);background:var(--cream);border-radius:18px;padding:20px;
+}
+.contact p{margin:0;font-size:14px;font-weight:700;color:var(--ink-soft)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 20px;
+  border-radius:999px;background:var(--ink);color:var(--paper);font-size:14px;font-weight:800;
+  text-decoration:none;box-shadow:0 8px 20px rgba(42,36,64,0.18);
+}
+.btn:hover{background:#1A1438;text-decoration:none}
+/* Footer */
+footer{margin-top:36px;text-align:center;font-size:13px;color:var(--mute);line-height:1.9}
+footer a{color:var(--ink-soft);font-weight:700}
+footer a:hover{color:var(--lavender-deep)}
+footer .site{display:block;margin-top:6px;color:var(--mute);font-weight:600}
+@media (min-width:640px){
+  .wrap{padding:40px 24px 56px}
+  .card{padding:40px}
+  h1{font-size:34px}
+  h2{font-size:24px}
+  .contact{flex-direction:row;align-items:center;justify-content:space-between}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <a class="back" href="policy">Политика конфиденциальности</a>
+    <span class="wordmark">MILU</span>
+  </header>
+
+  <article class="card">
+    <p class="kicker">Поддержка</p>
+    <h1>Поддержка MILU</h1>
+    <p class="updated">Последнее обновление: 6 августа 2026 г.</p>
+
+    <div class="intro">
+      <p>Помогаем родителям с приложением «Милу» для iOS: разбираемся с аккаунтом, подпиской, уведомлениями и любыми техническими вопросами.</p>
+    </div>
+
+    <nav class="toc" aria-label="Содержание">
+      <p>Содержание</p>
+      <ol>
+        <li><a href="#contacts">Как с нами связаться</a></li>
+        <li><a href="#faq">Частые вопросы</a></li>
+        <li><a href="#documents">Документы сервиса</a></li>
+      </ol>
+    </nav>
+
+    <div class="body">
+
+      <section id="contacts">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">01</span><h2>Как с нами связаться</h2></div>
+        <ul>
+          <li><strong>Электронная почта</strong> (основной канал): <a href="mailto:hello@millu.tech">hello@millu.tech</a></li>
+          <li><strong>Telegram</strong> (дополнительный канал): <a href="https://t.me/tuezov" target="_blank" rel="noopener noreferrer">t.me/tuezov</a></li>
+        </ul>
+        <p>Отвечаем обычно в течение 1–2 рабочих дней. Чтобы мы разобрались быстрее, укажите в письме адрес почты, на который зарегистрирован аккаунт, модель устройства и версию iOS, а также приложите скриншот проблемы.</p>
+      </section>
+
+      <section id="faq">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">02</span><h2>Частые вопросы</h2></div>
+
+        <h3>Как создать аккаунт?</h3>
+        <p>Регистрация бесплатная. При первом запуске приложения выберите вход по электронной почте либо Sign in with Apple. Отдельный аккаунт для ребёнка не нужен: профили детей создаются внутри аккаунта родителя.</p>
+
+        <h3>Приложение платное?</h3>
+        <p>Нет. Все функции приложения «Милу» доступны бесплатно: сказки, программы, дневник и напоминания.</p>
+
+        <h3>Как удалить аккаунт и данные?</h3>
+        <p>В приложении откройте «Профиль» и выберите удаление аккаунта. Если доступа к приложению нет, напишите на <a href="mailto:hello@millu.tech">hello@millu.tech</a> с адреса, на который оформлен аккаунт. Данные аккаунта и профилей детей удаляются полностью. Порядок и сроки описаны в <a href="policy">Политике конфиденциальности</a>.</p>
+
+        <h3>Почему сказки подбираются именно такие?</h3>
+        <p>Подборку формирует алгоритм: он опирается на анкету, которую вы заполняете при знакомстве, возраст ребёнка и выборы, которые ребёнок делает в развилках сказок. Чем больше пройдено историй, тем точнее подбор.</p>
+
+        <h3>Как включить или выключить напоминания?</h3>
+        <p>Время и частоту напоминаний можно изменить в разделе «Профиль». Чтобы отключить push-уведомления полностью, откройте «Настройки» iOS, выберите «Милу» и раздел «Уведомления».</p>
+
+        <h3>Что делать, если что-то не работает?</h3>
+        <p>Напишите нам на <a href="mailto:hello@millu.tech">hello@millu.tech</a> или в <a href="https://t.me/tuezov" target="_blank" rel="noopener noreferrer">Telegram</a>. Приложите скриншот и коротко опишите, что вы делали перед сбоем: так мы находим причину быстрее всего.</p>
+      </section>
+
+      <section id="documents">
+        <div class="sec-head"><span class="sec-num" aria-hidden="true">03</span><h2>Документы сервиса</h2></div>
+        <ul>
+          <li><a href="policy">Политика конфиденциальности</a> : какие данные мы собираем, как храним и как их удалить.</li>
+          <li><a href="terms">Условия использования</a> : права и обязанности сторон, оплата, отмена и возврат.</li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="contact">
+      <p>Вопросы по документу или подписке?</p>
+      <a class="btn" href="mailto:hello@millu.tech">hello@millu.tech</a>
+    </div>
+  </article>
+
+  <footer>
+    MILU · <a href="mailto:hello@millu.tech">hello@millu.tech</a><br>
+    <a href="policy">Политика конфиденциальности</a> · <a href="terms">Условия использования</a>
+    <span class="site">Основной сайт: millu.tech</span>
+  </footer>
+
+</div>
+</body>
+</html>
