@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Милу — сказки, которые развивают ребёнка</title>
+<meta name="description" content="Первые сказки, где решает ребёнок. Каждый вечер 5–10 минут — и видно, как растёт характер.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#FFF8EE">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="MILU">
+<meta property="og:url" content="https://www.millu.tech/app">
+<meta property="og:title" content="Милу — сказки, которые развивают ребёнка">
+<meta property="og:description" content="Первые сказки, где решает ребёнок. Каждый вечер 5–10 минут — и видно, как растёт характер.">
+<style>
+:root{
+  --cream:#FFF8EE;
+  --paper:#FFFCF6;
+  --ink:#2A2440;
+  --ink-soft:#5C5470;
+  --mute:#9C95B0;
+  --line:#E8E1D0;
+  --hairline:#EFEAE0;
+  --lavender:#C9BFFF;
+  --lavender-deep:#8A7FE0;
+  --lavender-wash:#F5F0FF;
+  --butter-wash:#FFF7DF;
+  --peach-wash:#FFEEE2;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background-color:var(--cream);
+  background-image:
+    radial-gradient(46rem 30rem at 50% 4%, rgba(201,191,255,0.35), rgba(201,191,255,0) 70%),
+    radial-gradient(38rem 26rem at 50% 4%, rgba(255,201,168,0.15), rgba(255,201,168,0) 70%);
+  background-repeat:no-repeat;
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  font-size:17px;
+  line-height:1.7;
+}
+.wrap{max-width:720px;margin:0 auto;padding:28px 20px 40px}
+/* Top bar */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.back{
+  display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 16px;
+  border:1px solid var(--hairline);border-radius:999px;background:var(--paper);
+  color:var(--ink);font-size:14px;font-weight:800;text-decoration:none;
+  box-shadow:0 2px 6px rgba(42,36,64,0.04);
+}
+.back:hover{border-color:var(--lavender);background:var(--lavender-wash);text-decoration:none}
+.wordmark{font-size:22px;font-weight:900;letter-spacing:0.06em;color:var(--lavender-deep);text-decoration:none}
+/* Shared */
+.kicker{margin:0;font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:0.22em;color:var(--lavender-deep)}
+a{color:var(--lavender-deep);font-weight:700;text-underline-offset:4px;text-decoration:none}
+a:hover{text-decoration:underline}
+strong{font-weight:800}
+:focus-visible{outline:3px solid var(--lavender-deep);outline-offset:2px;border-radius:6px}
+/* Hero */
+.hero{margin-top:32px;text-align:center}
+.hand{margin:0;font-size:28px;line-height:1;color:var(--lavender-deep);font-family:"Snell Roundhand","Apple Chancery","Segoe Script","Brush Script MT",cursive}
+h1{margin:14px 0 0;font-size:30px;font-weight:900;letter-spacing:-0.02em;line-height:1.15}
+.lede{margin:18px auto 0;max-width:34ch;font-size:18px;font-weight:500;color:var(--ink-soft)}
+.cta{margin-top:28px;display:flex;flex-direction:column;align-items:center;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;
+  border-radius:999px;background:var(--ink);color:var(--paper);font-size:16px;font-weight:800;
+  text-decoration:none;box-shadow:0 8px 20px rgba(42,36,64,0.18);
+}
+.btn:hover{background:#1A1438;text-decoration:none}
+.btn-soft{
+  display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 24px;
+  border-radius:999px;background:var(--lavender-wash);color:var(--ink);
+  border:1px solid var(--hairline);font-size:16px;font-weight:800;
+}
+.meta{margin:24px 0 0;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:0.18em;color:var(--mute)}
+/* Features */
+.section{margin-top:56px}
+.section-head{text-align:center}
+.section-head h2{margin:8px 0 0;font-size:26px;font-weight:900;letter-spacing:-0.02em;line-height:1.2}
+.features{margin:32px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr;gap:28px}
+.features li{margin:0}
+.shot{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;
+  aspect-ratio:4/5;padding:28px 22px;text-align:center;
+  border:1px solid var(--hairline);border-radius:24px;
+  background:linear-gradient(160deg,var(--lavender-wash),var(--paper) 55%,var(--peach-wash));
+  box-shadow:0 8px 22px rgba(42,36,64,0.07);
+}
+.shot .glyph{font-size:44px;line-height:1}
+.shot .shot-title{margin:0;font-size:19px;font-weight:900;letter-spacing:-0.01em;line-height:1.3;max-width:22ch;color:var(--ink)}
+.caption{margin:14px 2px 0;font-size:15px;font-weight:500;color:var(--ink-soft)}
+/* PRO teaser */
+.pro{
+  margin-top:56px;text-align:center;background:var(--paper);border:1px solid var(--hairline);
+  border-radius:24px;padding:32px 22px;box-shadow:0 4px 14px rgba(42,36,64,0.06);
+}
+.pro h2{margin:8px 0 0;font-size:26px;font-weight:900;letter-spacing:-0.02em;line-height:1.2}
+.pro p{margin:16px auto 0;max-width:38ch;font-size:17px;font-weight:500;color:var(--ink-soft)}
+.pro .plain{
+  display:inline-block;margin-top:24px;padding:12px 22px;border-radius:999px;
+  background:var(--lavender-wash);border:1px solid var(--hairline);
+  font-size:15px;font-weight:800;color:var(--ink-soft);
+}
+/* Trust strip */
+.trust{margin:40px 0 0;padding:0;list-style:none;display:grid;grid-template-columns:1fr;gap:14px}
+.trust li{
+  border:1px solid var(--hairline);background:var(--cream);border-radius:18px;
+  padding:16px 18px;box-shadow:0 2px 8px rgba(42,36,64,0.04);
+}
+.trust p{margin:0}
+.trust .t{margin-top:4px;font-size:15px;font-weight:800;color:var(--ink)}
+/* Footer */
+footer{margin-top:48px;text-align:center;font-size:13px;color:var(--mute);line-height:1.9}
+footer .copy{display:block;font-size:14px;font-weight:600;color:var(--ink-soft)}
+footer a{color:var(--ink-soft);font-weight:700}
+footer a:hover{color:var(--lavender-deep)}
+footer .site{display:block;margin-top:6px;color:var(--mute);font-weight:600}
+@media (min-width:640px){
+  .wrap{padding:40px 24px 56px}
+  h1{font-size:38px}
+  .section-head h2,.pro h2{font-size:30px}
+  .cta{flex-direction:row;justify-content:center}
+  .features{grid-template-columns:1fr 1fr;gap:32px}
+  .trust{grid-template-columns:1fr 1fr}
+  .pro{padding:40px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="topbar">
+    <a class="back" href="./">На главную</a>
+    <span class="wordmark">MILU</span>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hand">милу~</p>
+    <h1>Милу&nbsp;— сказки,<br>которые развивают</h1>
+    <p class="lede">Первые сказки, где решает ребёнок. Каждый вечер по 5–10 минут — и видно, как растёт характер.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:hello@millu.tech">Скоро в App&nbsp;Store</a>
+      <span class="btn-soft">Бесплатно на старте</span>
+    </div>
+    <p class="meta">Для iOS&nbsp;· возраст 1–10 лет&nbsp;· русский язык</p>
+  </section>
+
+  <!-- Features -->
+  <section class="section">
+    <div class="section-head">
+      <p class="kicker">Что внутри</p>
+      <h2>Шесть причин, чтобы попробовать</h2>
+    </div>
+
+    <ul class="features">
+      <li>
+        <div class="shot">
+          <span class="glyph" aria-hidden="true">🌙</span>
+          <p class="shot-title">Сказки, которые развивают ребёнка, пока он засыпает</p>
+        </div>
+        <p class="caption">Обычная сказка на ночь, в которой ребёнок делает выбор — и растёт.</p>
+      </li>
+      <li>
+        <div class="shot">
+          <span class="glyph" aria-hidden="true">🌱</span>
+          <p class="shot-title">За неделю сказки раскрывают характер ребёнка</p>
+        </div>
+        <p class="caption">Видим сильные стороны и зоны роста — и развиваем по всем направлениям.</p>
+      </li>
+      <li>
+        <div class="shot">
+          <span class="glyph" aria-hidden="true">🗺️</span>
+          <p class="shot-title">Каждую неделю — новая программа под вашего ребёнка</p>
+        </div>
+        <p class="caption">Сказки подстраиваются под то, как ребёнок растёт и что выбирает.</p>
+      </li>
+      <li>
+        <div class="shot">
+          <span class="glyph" aria-hidden="true">🎵</span>
+          <p class="shot-title">Вечерний ритуал, который запомнится на всю жизнь</p>
+        </div>
+        <p class="caption">Спокойная музыка, нежный голос и близость с вами перед сном.</p>
+      </li>
+      <li>
+        <div class="shot">
+          <span class="glyph" aria-hidden="true">🛡️</span>
+          <p class="shot-title">Поможем в трудный момент и разовьём сильные стороны</p>
+        </div>
+        <p class="caption">Страхи, истерики, ревность, гаджеты — и лидерство, эмпатия, смелость.</p>
+      </li>
+      <li>
+        <div class="shot">
+          <span class="glyph" aria-hidden="true">🎁</span>
+          <p class="shot-title">Баллы, награды и подарки за каждый вечер</p>
+        </div>
+        <p class="caption">Ребёнок собирает достижения и сюрпризы — и ждёт сказку с радостью.</p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Free launch note -->
+  <section class="pro">
+    <p class="kicker">СЕЙЧАС ВСЁ БЕСПЛАТНО</p>
+    <h2>Все возможности открыты каждой семье</h2>
+    <p>Все сказки, еженедельные программы под вашего ребёнка, аналитика характера и помощь в трудных ситуациях доступны бесплатно. Премиум-тариф появится позже и будет оформляться внутри приложения.</p>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="section">
+    <ul class="trust">
+      <li>
+        <p class="kicker">Безопасно</p>
+        <p class="t">Без рекламы внутри сказок</p>
+      </li>
+      <li>
+        <p class="kicker">Психологи</p>
+        <p class="t">Сюжеты от детских психологов</p>
+      </li>
+      <li>
+        <p class="kicker">Любой момент</p>
+        <p class="t">Отмена подписки в один тап</p>
+      </li>
+      <li>
+        <p class="kicker">Made in Russia</p>
+        <p class="t">Полная локализация и озвучка</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <span class="copy">© 2026 MILU. Сказки, которые развивают ребёнка.</span>
+    <a href="policy">Политика конфиденциальности</a> · <a href="terms">Условия использования</a> · <a href="support">Поддержка</a> · <a href="mailto:hello@millu.tech">hello@millu.tech</a>
+    <span class="site">Основной сайт: millu.tech</span>
+  </footer>
+
+</div>
+</body>
+</html>
